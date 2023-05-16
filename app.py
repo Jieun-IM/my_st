@@ -10,15 +10,6 @@ st.caption("this is the caption")
 st.code("x=2021")
 st.latex(r'''a+ar^1+ar^2+ar^3''')
 
-st.subheader("Image :")
-st.image("kid.jpg")
-
-st.subheader("Audio :")
-st.audio("Audio.mp3")
-
-st.subheader("Video :")
-st.video("video.mp4")
-
 st.checkbox('yes')
 st.button('Click')
 st.radio('Pick your gender', ['Male', 'Female'])
