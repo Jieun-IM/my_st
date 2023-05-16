@@ -2,12 +2,12 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = st.slider('Select a value')
-st.write(x, 'squared is', x * x)
-
 st.title("this is the app title")
 st.header("this is the markdown")
 st.markdown("this is the header")
+
+x = st.slider('Select a value')
+st.write(x, 'squared is', x * x)
 
 st.sidebar.title("This is written inside the sidebar")
 st.sidebar.button("Click")
