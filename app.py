@@ -16,12 +16,6 @@ st.sidebar.radio("Pick your gender", ["Male", "Female"])
 
 st.checkbox('yes')
 
-st.radio('Pick your gender', ['Male', 'Female'])
-st.selectbox('Pick your gender', ['Male', 'Female'])
-st.multiselect('choose a planet', ['Jupiter', 'Mars', 'neptune'])
-st.select_slider('Pick a mark', ['Bad', 'Good', 'Excellent'])
-st.slider('Pick a number', 0.50)
-
 container = st.container()
 container.write("This is written inside the container")
 st.write("This is written outside the container")
