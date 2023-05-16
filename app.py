@@ -10,6 +10,10 @@ st.caption("this is the caption")
 st.code("x=2021")
 st.latex(r'''a+ar^1+ar^2+ar^3''')
 
+st.sidebar.title("This is written inside the sidebar")
+st.sidebar.button("Click")
+st.sidebar.radio("Pick your gender", ["Male", "Female"])
+
 st.checkbox('yes')
 st.button('Click')
 st.radio('Pick your gender', ['Male', 'Female'])
@@ -17,11 +21,6 @@ st.selectbox('Pick your gender', ['Male', 'Female'])
 st.multiselect('choose a planet', ['Jupiter', 'Mars', 'neptune'])
 st.select_slider('Pick a mark', ['Bad', 'Good', 'Excellent'])
 st.slider('Pick a number', 0.50)
-
-
-st.sidebar.title("This is written inside the sidebar")
-st.sidebar.button("Click")
-st.sidebar.radio("Pick your gender", ["Male", "Female"])
 
 container = st.container()
 container.write("This is written inside the container")
