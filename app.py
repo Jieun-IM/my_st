@@ -15,7 +15,7 @@ st.sidebar.button("Click")
 st.sidebar.radio("Pick your gender", ["Male", "Female"])
 
 st.checkbox('yes')
-st.button('Click')
+
 st.radio('Pick your gender', ['Male', 'Female'])
 st.selectbox('Pick your gender', ['Male', 'Female'])
 st.multiselect('choose a planet', ['Jupiter', 'Mars', 'neptune'])
