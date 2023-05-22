@@ -58,6 +58,9 @@ st.graphviz_chart('''
     }
 ''')
 
+st.title("최고의 수업, OSS 개발에서 배운 Streamlit")
+
 df2 = pd.DataFrame(np.random.randn(500, 2) / [50, 50] + [37.76, -122.4],
                    columns=['lat','lon'])
 st.map(df2)
+
