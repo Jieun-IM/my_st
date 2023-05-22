@@ -10,17 +10,8 @@ st.caption("this is the caption")
 st.code("x=2021")
 st.latex(r'''a+ar^1+ar^2+ar^3''')
 
-container = st.container()
-container.write("This is written inside the container")
-st.write("This is written outside the container")
-
 x = st.slider('Select a value')
 st.write(x, 'squared is', x * x)
-
-rand = np.random.normal(1, 2, size=20)
-fig, ax = plt.subplots()
-ax.hist(rand, bins=15)
-st.pyplot(fig)
 
 st.checkbox('yes')
 st.button('Click')
@@ -38,7 +29,21 @@ st.text_area('Description')
 st.file_uploader('Upload a photo')
 st.color_picker('Choose your favourite color')
 
-
 st.sidebar.title("This is written inside the sidebar")
 st.sidebar.button("Click", key='btn2')
 st.sidebar.radio("Pick your gender", ["Male", "Female"], key='rd1')
+
+container = st.container()
+container.write("This is written inside the container")
+st.write("This is written outside the container")
+
+rand = np.random.normal(1, 2, size=20)
+fig, ax = plt.subplots()
+ax.hist(rand, bins=15)
+st.pyplot(fig)
+
+df = pd.DataFrame(
+  np.random.randn(10, 2),
+  columns=['x','y'])
+st.line_chart(df)
+
