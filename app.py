@@ -10,9 +10,6 @@ st.caption("this is the caption")
 st.code("x=2021")
 st.latex(r'''a+ar^1+ar^2+ar^3''')
 
-st.sidebar.title("This is written inside the sidebar")
-st.sidebar.button("Click")
-st.sidebar.radio("Pick your gender", ["Male", "Female"])
 
 container = st.container()
 container.write("This is written inside the container")
