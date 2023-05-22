@@ -57,3 +57,7 @@ st.graphviz_chart('''
         Small_fishes -> Shrimp
     }
 ''')
+
+df2 = pd.DataFrame(np.random.randn(500, 2) / [50, 50] + [37.76, -122.4],
+                   columns=['lat','lon'])
+st.map(df2)
