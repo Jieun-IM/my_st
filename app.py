@@ -2,6 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import graphviz as graphviz
 
 st.title("this is the app title")
 st.header("this is the markdown")
@@ -48,3 +49,11 @@ df = pd.DataFrame(
   columns=['x','y'])
 st.line_chart(df)
 
+st.graphviz_chart('''
+    digraph {
+        Big_shark -> Tuna
+        Tuna -> Mackerel
+        Mackerel -> Small_fishes
+        Small_fishes -> Shrimp
+    }
+''')
