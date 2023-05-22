@@ -1,4 +1,4 @@
-streamlit
-matplotlib
-numpy
-pandas
+pip install streamlit
+pip install matplotlib
+pip install numpy
+pip install pandas
