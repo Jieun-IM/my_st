@@ -38,7 +38,7 @@ st.text_area('Description')
 st.file_uploader('Upload a photo')
 st.color_picker('Choose your favourite color')
 
+st.sidebar.title("This is written inside the sidebar")
+st.sidebar.button("Click")
 st.sidebar:
-  st.title("This is written inside the sidebar")
-  st.button("Click")
-  st.radio("Pick your gender", ["Male", "Female"])
+  a = st.sidebar.radio("Pick your gender", ["Male", "Female"])
